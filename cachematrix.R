@@ -44,7 +44,7 @@ cacheSolve <- function(x, ...) {
     
     
     data <- x$get()
-    #Check the matrix if it have the inverse else, calculate the inverse and cache it
+    #Check the matrix if it have the inverse else calculate the inverse and cache it
     if(det(data) == 0){
         message("the maxtrix have no inverse")
     }
@@ -72,7 +72,7 @@ cacheSolve <- function(x, ...) {
 #                       0.75  2.000000e+00 -1.75
 #> cacheSolve(mt)  -> "getting the data"
 
-## case the matrix have the inverse
+## case the matrix have no inverse
 #> mt <- makeCacheMatrix(matrix(1:9), 3, 3)) 
 #> mt$get()                                       
 #->  1    2    3
